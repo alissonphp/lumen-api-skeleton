@@ -13,7 +13,7 @@ Estrutura base para criação de API's REST usando Lumen Framework e pacotes ext
 
 ### Instalação
 
-IMPORTANTE: configurar o .env (copiar .env.example) na raiz da aplicação com as variáveis de desenvolvimento: conexões com MySQL e Mongo, APP Ids dos servições de autenticação (google, facebook).
+IMPORTANTE: configurar o .env (copiar .env.example) na raiz da aplicação com as variáveis de desenvolvimento: conexões com MySQL e Mongo, APP Ids dos serviços de autenticação (google, facebook).
 
 ```sh
 $ composer install
