@@ -76,6 +76,6 @@ $ phpunit --testsuite unit
 
 ### Contribuições
 
-O objetivo desse repostiório é criar um modelo rápido para criação de API's REST usando o Lumen Framework. Ainda falta bastante para chegarmos perto de um modelo "ideal": regras de acesso aos endpoints, melhoria nos padrões, escrita de testes, traduções, etc.
+O objetivo desse repostiório é criar um modelo rápido para implementação de API's REST usando o Lumen Framework. Ainda falta bastante para chegarmos perto de um modelo "ideal": regras de acesso aos endpoints, melhoria nos padrões, escrita de testes, traduções, etc.
 
 #### Fork, enjoy and join us in this project! Send yours pull requests, share to your friends.
