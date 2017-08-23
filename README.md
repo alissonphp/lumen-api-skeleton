@@ -1,5 +1,5 @@
-# Authoring Tools API 
-API Rest da Ferramenta de Autoria. Fornece os dados necessários para as operações na aplicação.
+# Rest API Lumen Skeleton
+Estrutura base para criação de API's REST usando Lumen Framework e pacotes extras
  
 ### Requisitos de Sistema
 
@@ -51,6 +51,9 @@ A aplicação está arquitetada em Módulos. Cada módulo tem responsabilidade d
  │   │   routes.php
  ```
  
+Para habilitar/desabilitar as funcionalidades de um módulo basta informar o Namespace no array do arquivo config/modules.php
+Importante verificar a interoperabilidade entre módulos antes de dasativá-lo
+ 
 ### Roteamento
 
 As rotas são definidas no arquivos routes.php dentro do diretório raiz de cada módulo.
@@ -70,3 +73,9 @@ Rodar os testes usando o comando referenciando o testsuite como 'unit' ou 'integ
 $ phpunit --testsuite integration
 $ phpunit --testsuite unit
 ```
+
+### Contribuições
+
+O objetivo desse repostiório é criar um modelo rápido para criação de API's REST usando o Lumen Framework. Ainda falta bastante para chegarmos perto de um modelo "ideal": regras de acesso aos endpoints, melhoria nos padrões, escrita de testes, traduções, etc.
+
+#### Fork, enjoy and join us in this project! Send yours pull requests, share to your friends.
