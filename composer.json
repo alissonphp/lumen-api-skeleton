@@ -38,7 +38,8 @@
     "scripts": {
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\""
-        ]
+        ],
+        "serve": "php -S localhost:8000 -t public/"
     },
     "minimum-stability": "dev",
     "prefer-stable": true

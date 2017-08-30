@@ -63,7 +63,7 @@ class Handler extends ExceptionHandler
         $whoops = new \Whoops\Run;
         $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
 
-        return new \Illuminate\Http\Response(
+        return response()->make(
             $whoops->handleException($e),
             method_exists($e, 'getStatusCode') ? $e->getStatusCode() : 500,
             method_exists($e, 'getHeaders') ? $e->getHeaders() : []
