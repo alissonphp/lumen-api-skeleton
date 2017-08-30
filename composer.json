@@ -1,5 +1,5 @@
 {
-    "name": "Lumen OAuth API",
+    "name": "alissonphp/lumen-api-skeleton",
     "description": "Lumen API skeleton with JWT to manager tokens, Socialite to OAuth Providers, MongoDB driver and Predis to Redis cache storage.",
     "keywords": ["lumen", "api", "jwt", "oauth", "socialite", "mongodb"],
     "license": "MIT",
@@ -12,7 +12,8 @@
         "laravel/socialite": "^3.0",
         "tymon/jwt-auth": "1.0.0-beta.3",
         "predis/predis": "^1.1",
-        "illuminate/redis": "^5.4"
+        "illuminate/redis": "^5.4",
+        "filp/whoops": "^2.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -37,7 +38,8 @@
     "scripts": {
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\""
-        ]
+        ],
+        "serve": "php -S localhost:8000 -t public/"
     },
     "minimum-stability": "dev",
     "prefer-stable": true

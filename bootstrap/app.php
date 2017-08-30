@@ -31,6 +31,7 @@ $app->singleton(
     App\Console\Kernel::class
 );
 
+$app->configure('app');
 $app->configure('services');
 $app->configure('jwt');
 $app->configure('auth');
