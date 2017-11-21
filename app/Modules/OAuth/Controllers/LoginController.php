@@ -106,6 +106,16 @@ class LoginController extends Controller
 
             }
 
+            if ( env('REDIR_URL') ) {
+                if (env('REDIR_TOKEN_AS_PARAM')) {
+                    $redirWithToken = env('REDIR_URL') . "/token:{$token}";
+                } else {
+                    $redirWithToken = env('REDIR_URL') . "?token={$token}";
+                }
+
+                return redirect($redirWithToken);
+            }
+
             return response()->json(compact('token'));
         } catch (\Exception $ex) {
             return response($ex->getMessage(),500);
